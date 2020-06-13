@@ -9,7 +9,7 @@ import io from "socket.io-client";
 // import TextContainer from '../TextContainer/TextContainer';
 // import Messages from '../Messages/Messages';
 import Infobar from '../Infobar/Infobar';
-// import Input from '../Input/Input';
+import Input from '../Input/Input';
 
 import './Chat.css';
 
@@ -80,8 +80,8 @@ const Chat = ({ location }) => {
     <div className="outerContainer">
       <div className="container">
 				<Infobar room={room} />
-				{/* <Messages messages={messages} name={name} />
-				<Input message={message} setMessage={setMessage} sendMessage={sendMessage} /> */}
+				{/* <Messages messages={messages} name={name} /> */}
+				<Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
 				{/* <input
 					placeholder="Type a message..."
 					value={message}
